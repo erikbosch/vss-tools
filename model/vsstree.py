@@ -85,9 +85,6 @@ class VSSNode(Node):
         if "enum" in source_dict.keys():
             self.enum = source_dict["enum"]
 
-        if "aggregate" in source_dict.keys():
-            self.aggregate = source_dict["aggregate"]
-
         if "default" in source_dict.keys():
             self.default_value = source_dict["default"]
 
@@ -245,7 +242,7 @@ class VSSNode(Node):
 
         for aKey in element.keys():
             if aKey not in ["type", "children", "datatype", "description", "unit", "uuid", "min", "max", "enum",
-                            "aggregate", "default" , "instances", "deprecation"]:
+                            "default" , "instances", "deprecation"]:
                 raise NonCoreAttributeException('Non-core attribute "%s" in elment %s found.' % (aKey, name))
 
 

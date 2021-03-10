@@ -55,13 +55,9 @@ def export_node(json_dict, node):
     if node.deprecation != "":
         json_dict[node.name]["deprecation"] = node.deprecation
 
-    # in case of unit or aggregate, the attribute will be missing
+    # in case of unit, the attribute will be missing
     try:
         json_dict[node.name]["unit"] = str(node.unit.value)
-    except AttributeError:
-        pass
-    try:
-        json_dict[node.name]["aggregate"] = node.aggregate
     except AttributeError:
         pass
 

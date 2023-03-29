@@ -11,7 +11,7 @@
 #
 
 # Deliberate trailing spaces below
-       
+
 import sys
 import vspec2x
 

@@ -10,6 +10,8 @@
 # Convert vspec2csv wrapper for vspec2x
 #
 
+# Deliberate trailing spaces below
+       
 import sys
 import vspec2x
 

@@ -151,4 +151,3 @@ def cli(
     with open(str(output), "wb") as f:
         export_node(tree, f)
     log.info("Binary main tree output generated in %s", output)
-
